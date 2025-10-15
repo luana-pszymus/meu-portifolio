@@ -3,8 +3,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Inter", "Poppins", sans-serif;
-  background-color: #0a192f;
-  color: #ccd6f6;
+  background-color: #170433;
+  color: #d3c8e3;
   line-height: 1.6;
 }
 
@@ -28,7 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(10, 25, 47, 0.9);
+  background: #170433;
   backdrop-filter: blur(6px);
   z-index: 10;
 }
@@ -42,7 +42,7 @@ nav ul {
 }
 
 nav ul li a {
-  color: #64ffda;
+  color: #e3cef3;
   text-decoration: none;
   font-size: 0.9rem;
   transition: 0.3s;
@@ -53,8 +53,8 @@ nav ul li a:hover {
 }
 
 .resume-btn {
-  border: 1px solid #64ffda;
-  color: #64ffda;
+  border: 1px solid #6b538e;
+  color: #6b538e;
   padding: 0.6rem 1.2rem;
   border-radius: 4px;
   text-decoration: none;
@@ -62,12 +62,12 @@ nav ul li a:hover {
 }
 
 .resume-btn:hover {
-  background-color: rgba(100, 255, 218, 0.1);
+  background-color: #170433;
 }
 
 /* ===== Texto principal ===== */
 .hero p.intro {
-  color: #64ffda;
+  color: #c881ff;
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -75,7 +75,7 @@ nav ul li a:hover {
 .hero h1 {
   font-size: 3.5rem;
   margin: 0;
-  color: #ccd6f6;
+  color: #d3c8e3;
 }
 
 .hero h2 {
@@ -86,14 +86,14 @@ nav ul li a:hover {
 
 .hero p.description {
   max-width: 540px;
-  color: #8892b0;
+  color: #d3c8e3;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   font-size: 1.1rem;
 }
 
 .hero p.description a {
-  color: #64ffda;
+  color: #d3c8e3;
   text-decoration: none;
 }
 
@@ -104,8 +104,8 @@ nav ul li a:hover {
 /* ===== Botão principal ===== */
 .hero button {
   background-color: transparent;
-  color: #64ffda;
-  border: 1px solid #64ffda;
+  color: #c881ff;
+  border: 1px solid #c881ff;
   padding: 0.8rem 1.6rem;
   border-radius: 4px;
   cursor: pointer;
@@ -114,6 +114,43 @@ nav ul li a:hover {
 }
 
 .hero button:hover {
-  background-color: rgba(100, 255, 218, 0.1);
+  background-color: #1f0e39;
   transform: translateY(-2px);
+}
+
+/* == foto profile == */
+.profile-container {
+  display: flex;
+  justify-content: flex-end; /* posiciona à direita */
+  align-items: center;
+  height: 100vh;
+  padding-right: 8%;
+}
+
+/* contorno orgânico e destaque */
+.profile-image-wrapper {
+  width: 280px;
+  height: 280px;
+  border-radius: 58% 42% 64% 36% / 43% 51% 49% 57%; /* forma orgânica */
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(100, 255, 218, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-image-wrapper:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 50px rgba(100, 255, 218, 0.4);
+}
+
+/* imagem */
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(95%) contrast(105%);
+  transition: filter 0.4s ease;
+}
+
+.profile-image:hover {
+  filter: brightness(100%) contrast(110%);
 }
