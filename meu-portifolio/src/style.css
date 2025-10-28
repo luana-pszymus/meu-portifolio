@@ -133,13 +133,13 @@ nav ul li a:hover {
   height: 280px;
   border-radius: 58% 42% 64% 36% / 43% 51% 49% 57%; /* forma orgânica */
   overflow: hidden;
-  box-shadow: 0 0 40px rgba(100, 255, 218, 0.2);
+  box-shadow: 0 0 40px #6c548f;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .profile-image-wrapper:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 50px rgba(100, 255, 218, 0.4);
+  box-shadow: 0 0 50px #d3c8e3;
 }
 
 /* imagem */
