@@ -10,7 +10,7 @@ body {
 
 /* ===== Container principal ===== */
 .hero {
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,19 +24,19 @@ header {
   top: 0;
   right: 0;
   width: 100%;
-  padding: 1rem 10%;
+  padding: 1rem 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #170433;
   backdrop-filter: blur(6px);
-  z-index: 10;
+  z-index: 50;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 0;
   margin: 0;
   padding: 0;
 }
@@ -80,14 +80,15 @@ nav ul li a:hover {
 
 .hero h2 {
   font-size: 3.5rem;
-  margin: 0.5rem 0;
+  margin: 0;
   color: #8892b0;
+  margin-bottom: 0;
 }
 
 .hero p.description {
   max-width: 540px;
   color: #d3c8e3;
-  margin-top: 1.5rem;
+  margin-top: 0;
   margin-bottom: 2rem;
   font-size: 1.1rem;
 }
@@ -129,8 +130,6 @@ nav ul li a:hover {
 
 /* contorno orgânico e destaque */
 .profile-image-wrapper {
-  width: 280px;
-  height: 280px;
   border-radius: 58% 42% 64% 36% / 43% 51% 49% 57%; /* forma orgânica */
   overflow: hidden;
   box-shadow: 0 0 40px #6c548f;
@@ -144,8 +143,6 @@ nav ul li a:hover {
 
 /* imagem */
 .profile-image {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   filter: brightness(95%) contrast(105%);
   transition: filter 0.4s ease;
@@ -153,4 +150,68 @@ nav ul li a:hover {
 
 .profile-image:hover {
   filter: brightness(100%) contrast(110%);
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 10%;
+  gap: 4rem; /* espaço entre texto e imagem */
+}
+
+/* lado esquerdo: texto */
+.text-content {
+  flex: 1;
+}
+
+/* lado direito: imagem */
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 900px) {
+  .hero p.intro {
+    color: #c881ff;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #d3c8e3;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    color: #8892b0;
+    margin-bottom: 0;
+  }
+
+  .hero p.description {
+    max-width: 540px;
+    color: #d3c8e3;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content {
+    align-items: center;
+  }
+
+  .image-content {
+    margin-top: 2rem;
+  }
 }
