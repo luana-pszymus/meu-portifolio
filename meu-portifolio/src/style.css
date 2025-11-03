@@ -130,6 +130,8 @@ nav ul li a:hover {
 
 /* contorno orgânico e destaque */
 .profile-image-wrapper {
+  width: 280px;
+  height: 280px;
   border-radius: 58% 42% 64% 36% / 43% 51% 49% 57%; /* forma orgânica */
   overflow: hidden;
   box-shadow: 0 0 40px #6c548f;
@@ -143,6 +145,8 @@ nav ul li a:hover {
 
 /* imagem */
 .profile-image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   filter: brightness(95%) contrast(105%);
   transition: filter 0.4s ease;
@@ -154,15 +158,29 @@ nav ul li a:hover {
 
 .hero-section {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  padding: 6rem 10%;
   min-height: 100vh;
-  padding: 0 10%;
-  gap: 4rem; /* espaço entre texto e imagem */
+  gap: 3rem; /* espaço entre topo e parte inferior */
+}
+
+/* ===== Parte de cima ===== */
+.top-section {
+  text-align: center;
+}
+
+.bottom-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 120px;
+  gap: 4rem;
 }
 
 /* lado esquerdo: texto */
-.text-content {
+.left-side {
   flex: 1;
 }
 
@@ -170,7 +188,7 @@ nav ul li a:hover {
 .image-content {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 /* Ajuste para telas menores */
@@ -214,4 +232,13 @@ nav ul li a:hover {
   .image-content {
     margin-top: 2rem;
   }
+}
+
+.bottom-section {
+  flex-direction: column;
+  text-align: center;
+}
+
+.right-side {
+  margin-top: 2rem;
 }
