@@ -156,39 +156,29 @@ nav ul li a:hover {
   filter: brightness(100%) contrast(110%);
 }
 
+/* ===== Layout principal ===== */
 .hero-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 6rem 10%;
-  min-height: 100vh;
-  gap: 3rem; /* espaço entre topo e parte inferior */
-}
-
-/* ===== Parte de cima ===== */
-.top-section {
-  text-align: center;
-}
-
-.bottom-section {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 100%;
-  max-width: 120px;
-  gap: 4rem;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 10%;
+  gap: 4rem; /* espaçamento entre texto e imagem */
 }
 
-/* lado esquerdo: texto */
-.left-side {
+/* Texto (Conteudo + App) */
+.text-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* lado direito: imagem */
+/* Imagem à direita */
 .image-content {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 /* Ajuste para telas menores */
