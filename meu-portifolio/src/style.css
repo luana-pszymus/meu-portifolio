@@ -181,6 +181,53 @@ nav ul li a:hover {
   justify-content: center;
 }
 
+.projects-section {
+  margin-top: 2rem;
+  background-color: #1f0e39;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px #6b538e;
+  animation: fadeIn 0.5s ease;
+}
+
+.projects-section h3 {
+  margin-top: 0;
+  color: #c881ff;
+  font-size: 1.4rem;
+}
+
+.projects-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.projects-section li {
+  margin-bottom: 0.8rem;
+}
+
+.projects-section a {
+  color: #d3c8e3;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.projects-section a:hover {
+  color: #c881ff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Ajuste para telas menores */
 @media (max-width: 900px) {
   .hero p.intro {
