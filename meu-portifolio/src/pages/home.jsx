@@ -1,6 +1,6 @@
 import Conteudo from "../components/conteudo.jsx";
-import App from "../components/App.jsx";
-import ProfileImage from "../components/profile.jsx";
+import App from "../components/Description.jsx";
+import ProfileImage from "../components/Profile.jsx";
 import { personalData } from "../data/personalData.js";
 import ButtonProjetos from "../components/ButtonProjetos.jsx";
 
